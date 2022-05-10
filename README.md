@@ -42,5 +42,5 @@ CSS로 구현할 수 있는 UI의 가능성을 탐구합니다.
 - [Algorithm](https://github.com/jiyuunyang/Algorithm)
 - [개발자로서 알면 좋은 지식들](https://github.com/jiyuunyang/KnowledgeOfDevelopment)
 
-### 🥝 에세이들
+### ✒ 에세이들
 - [비전공자인 나는 왜 개발자가 되기로 마음 먹었는가](https://jiyuunyang.tistory.com/123)
