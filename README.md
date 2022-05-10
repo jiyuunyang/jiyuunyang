@@ -40,4 +40,4 @@ CSS로 구현할 수 있는 UI의 가능성을 탐구합니다.
 - [Typescript](https://github.com/jiyuunyang/TypescriptExample)
 - [React](https://github.com/jiyuunyang/UdemyReact)
 - [Algorithm](https://github.com/jiyuunyang/Algorithm)
-- [개발자로서 알면 좋은 지식들]()
+- [개발자로서 알면 좋은 지식들](https://github.com/jiyuunyang/KnowledgeOfDevelopment)
