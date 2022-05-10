@@ -37,6 +37,6 @@ CSS로 구현할 수 있는 UI의 가능성을 탐구합니다.
 ### 🌱 현재 Typescript와 React, Algorithm을 공부 중입니다
 
 공부한 내용들을 레포지토리에 기록합니다.
-- [Typescript] (https://github.com/jiyuunyang/Algorithm)
-- [React] (https://github.com/jiyuunyang/Algorithm)
-- [Algorithm] (https://github.com/jiyuunyang/Algorithm)
+- [Typescript](https://github.com/jiyuunyang/Algorithm)
+- [React](https://github.com/jiyuunyang/Algorithm)
+- [Algorithm](https://github.com/jiyuunyang/Algorithm)
