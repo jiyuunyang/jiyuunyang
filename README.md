@@ -43,4 +43,4 @@ CSS로 구현할 수 있는 UI의 가능성을 탐구합니다.
 - [개발자로서 알면 좋은 지식들](https://github.com/jiyuunyang/KnowledgeOfDevelopment)
 
 ### ✒ 에세이들
-- [비전공자인 나는 왜 개발자가 되기로 마음 먹었는가](https://jiyuunyang.tistory.com/123)
+- [비전공자인 나는 왜 개발자가 되기로 마음 먹었는가](https://jiyuunyang.tistory.com/pages/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EC%9D%B8-%EB%82%98%EB%8A%94-%EC%99%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EB%90%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C-%EB%A8%B9%EC%97%88%EB%8A%94%EA%B0%80)
