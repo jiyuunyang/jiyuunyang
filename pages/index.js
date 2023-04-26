@@ -74,13 +74,14 @@ export default function Home() {
             <Link href='https://github.com/jiyuunyang'>personal Github</Link>
             <Link href='https://github.com/piyuun'>Github for work</Link>
             <Link href='https://jiyuunyang.tistory.com/'>Blog</Link>
+            <Link href='https://jiyuunyang.github.io/keynote/'>Portfolio</Link>
           </section>
           <section className={styles.section}>
             <h2 className={styles.theme}>Works</h2>
-            <h3 className={styles.item}>DataB 2021.06 - </h3>
+            <h3 className={styles.item}>DataB 2021.06 - 2023.04</h3>
             <Link href='https://www.engram.us'>Engram</Link>
             <Link href='https://blog.engram.us'>Engram Blog</Link>
-            <h3 className={styles.item}>Koldsleep 2022.10 - 2022.12</h3>
+            <h3 className={styles.item}>Koldsleep 2022.10 - </h3>
             <Link href='https://play.google.com/store/apps/details?id=com.maiorem00.happysavefronttest&hl=ko&pli=1'>
               Happy Safe Box
             </Link>
