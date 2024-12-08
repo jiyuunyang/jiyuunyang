@@ -4,52 +4,62 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 
+interface ExtendHTMLCanvasElement extends HTMLCanvasElement {
+  width: number;
+  height: number;
+}
+
 export default function Home() {
   // Get the canvas node and the drawing context
   const canvas = useRef(null);
 
   useEffect(() => {
-    const context = canvas.current.getContext('2d');
+    if (canvas.current) {
+      const context = (canvas.current as ExtendHTMLCanvasElement).getContext(
+        '2d'
+      );
 
-    const width = document.body.offsetWidth;
-    const height = document.body.offsetHeight;
-    canvas.current.width = width;
-    canvas.current.height = height;
+      const width = document.body.offsetWidth;
+      const height = document.body.offsetHeight;
+      (canvas.current as ExtendHTMLCanvasElement).width = width;
+      (canvas.current as ExtendHTMLCanvasElement).height = height;
 
-    context.fillStyle = '#000';
-    context.fillRect(0, 0, width, height);
+      if (context != null) {
+        context.fillStyle = '#000';
+        context.fillRect(0, 0, width, height);
 
-    // calculate how many 'lines' to show and animate
-    const columns = Math.floor(width / 20) + 1;
-    const yPositions = Array.from({ length: columns }).fill(0);
+        // calculate how many 'lines' to show and animate
+        const columns = Math.floor(width / 20) + 1;
+        const yPositions: number[] = new Array(columns).fill(0);
 
-    context.fillStyle = '#000';
-    context.fillRect(0, 0, width, height);
+        context.fillStyle = '#000';
+        context.fillRect(0, 0, width, height);
 
-    const matrixEffect = () => {
-      context.fillStyle = '#0001';
-      context.fillRect(0, 0, width, height);
+        const matrixEffect = () => {
+          context.fillStyle = '#0001';
+          context.fillRect(0, 0, width, height);
 
-      context.fillStyle = '#0f0';
-      context.font = '15pt monospace';
+          context.fillStyle = '#0f0';
+          context.font = '15pt monospace';
 
-      yPositions.forEach((y, index) => {
-        const text = String.fromCharCode(Math.random() * 128);
-        const x = index * 20;
-        context.fillText(text, x, y);
+          yPositions.forEach((y, index) => {
+            const text = String.fromCharCode(Math.random() * 128);
+            const x = index * 20;
+            context.fillText(text, x, y);
 
-        if (y > 100 + Math.random() * 10000) {
-          yPositions[index] = 0;
-        } else {
-          yPositions[index] = y + 20;
-        }
-      });
-    };
-
-    const interval = setInterval(matrixEffect, 50);
-    return () => {
-      clearInterval(interval);
-    };
+            if (y > 100 + Math.random() * 10000) {
+              yPositions[index] = 0;
+            } else {
+              yPositions[index] = y + 20;
+            }
+          });
+        };
+        const interval = setInterval(matrixEffect, 50);
+        return () => {
+          clearInterval(interval);
+        };
+      }
+    }
   }, [canvas]);
 
   return (
